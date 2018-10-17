@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web scraping</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="img" id="img">
+      <img src="./img/plusicon2.png" alt="">
+    </div>
+  </div>
+
+  <div class="bg-modal">
+    <div class="modal-content">
+
+      <div class="field2">
+        <img src="./img/delete2.png" alt="" class="img2">
+      </div>
+
+      <form action="" class="form">
+        <div class="field">
+          <input type="text" name="" placeholder="Enter url">
+        </div>
+        <div class="field">
+          <input type="email" name="" placeholder="Enter email">
+        </div>
+        <div class="field">
+          <select class="" name="" value="What do you want">
+            <option value="">User profile</option>
+            <option value="">Email credential</option>
+            <option value="">Blog</option>
+            <option value="">Post</option>
+          </select>
+        </div>
+        <div class="field"id="button">
+          <input type="button" name="" value="Start scraping">
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+
+    <script>
+    document.getElementById('img').addEventListener('click',function(){
+      document.querySelector('.bg-modal').style.display = 'flex';
+      document.getElementById('img').style.display = 'none';
+    });
+
+    document.getElementById('button').addEventListener('click',function(){
+      document.querySelector('.bg-modal').style.display = 'none';
+      document.getElementById('img').style.display = 'flex';
+    });
+
+    document.querySelector('.img2').addEventListener('click',function(){
+      document.querySelector('.bg-modal').style.display = 'none';
+      document.getElementById('img').style.display = 'flex';
+    });
+      // you can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  
+  </body>
+</html>
