@@ -1,0 +1,137 @@
+body{
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background: url('./img/Rectangle.png') no-repeat;
+  background-size: cover;
+  background-position: 0;
+  background-attachment: fixed;
+}
+
+.img{
+  width: 99px;
+  height: 90px;
+  background-size: cover;
+  overflow: hidden;
+  margin-top: 46%;
+  margin-left: 92%;
+  z-index: auto;
+}
+
+.bg-modal{
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content{
+  width: 500px;
+  height: 600px;
+  background-image: url('./img/bg.png');
+  border-radius: 4px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form{
+  margin: 150px auto;
+}
+
+.field{
+  width: 50%;
+  height: 25px;
+  margin: 30px auto;
+  display: block;
+}
+input[type="text"]{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #6478AC;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 20px auto;
+  color: black;
+  padding: 0px 10px 0px 10px;
+}
+
+input[type="email"]{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #6478AC;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 20px auto;
+  color: black;
+  padding: 0px 10px 0px 10px;
+}
+
+::-webkit-input-placeholder{
+  color: #5E5C5C;
+}
+::-o-placeholder{
+  color: #5E5C5C;
+}
+::-moz-placeholder{
+  color: #5E5C5C;
+}
+::-ms-input-placeholder{
+  color: #5E5C5C;
+}
+
+select{
+   appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+
+  width: 108%;
+  height: 30px;
+
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #6478AC;
+  font-size: 14px;
+  font-weight: normal;
+  margin:20px auto;
+  color: white;
+  padding: 0px 10px 0px 10px;
+}
+
+input[type="button"]{
+  width: 50%;
+  height: 30px;
+  border: 0;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 60px auto;
+  color: #6478AC;
+  padding: 0px 10px 0px 10px;
+
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.field2{
+  width: 140%;
+  height: 20px;
+  margin: 10px 10px 0px 120px ;
+
+}
+
+.field2 img{
+  width: 18px;
+  height: 18px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}
